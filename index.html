@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الخصم</title>
+</head>
+<body>
+    <button id="discountButton">اضغط هنا</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById("discountButton").addEventListener("click", function () {
+            setTimeout(function () {
+                document.getElementById("message").textContent = "تم الخصم بنجاح!";
+            }, 30000); // 30 seconds
+        });
+    </script>
+</body>
+</html>
